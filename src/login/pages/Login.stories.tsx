@@ -75,6 +75,16 @@ export const WithoutRememberMe: Story = {
     )
 };
 
+export const WithoutRememberMeAndPasswordReset: Story = {
+    render: () => (
+        <KcPageStory
+            kcContext={{
+                realm: { rememberMe: false, resetPasswordAllowed: false }
+            }}
+        />
+    )
+};
+
 export const WithoutPasswordReset: Story = {
     render: () => (
         <KcPageStory

@@ -3,10 +3,17 @@ import colors from "tailwindcss/colors"
 
 export default {
   content: ["./index.html", "./src/**/*.{ts,tsx}"],
+  important: true,
+  corePlugins: {
+    float: false,
+    clear: false,
+    objectFit: false,
+    objectPosition: false,
+  },
   theme: {
     extend: {
       colors: {
-        primary: colors.blue,
+        primary: colors.indigo,
         secondary: colors.gray,
 
         provider: {

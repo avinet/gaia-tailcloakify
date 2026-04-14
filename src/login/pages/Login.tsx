@@ -237,7 +237,7 @@ export default function Login(props: PageProps<Extract<KcContext, { pageId: "log
                                     </div>
                                 </div>
 
-                                <div id="kc-form-buttons" className={clsx(kcClsx("kcFormGroupClass"), "flex flex-col pt-4 space-y-2")}>
+                                <div id="kc-form-buttons" className={clsx(kcClsx("kcFormGroupClass"), "flex flex-col space-y-2")}>
                                     <input type="hidden" id="id-hidden-input" name="credentialId" value={auth.selectedCredential} />
                                     <input
                                         tabIndex={7}

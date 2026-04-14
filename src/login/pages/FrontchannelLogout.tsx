@@ -34,7 +34,7 @@ export default function FrontchannelLogout(props: PageProps<Extract<KcContext, {
             headerNode={msg("frontchannel-logout.title")}
         >
             <p>{msg("frontchannel-logout.message")}</p>
-            <ul>
+            <ul className="list-disc list-inside">
                 {logout.clients.map(client => (
                     <li key={client.name}>
                         {client.name}

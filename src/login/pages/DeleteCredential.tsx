@@ -26,7 +26,7 @@ export default function DeleteCredential(props: PageProps<Extract<KcContext, { p
             headerNode={msg("deleteCredentialTitle", credentialLabel)}
         >
             <div id="kc-delete-text">{msg("deleteCredentialMessage", credentialLabel)}</div>
-            <form className="form-actions grid grid-cols-2 gap-10 mt-2" action={url.loginAction} method="POST">
+            <form className="form-actions grid grid-cols-2 gap-10 mt-6" action={url.loginAction} method="POST">
                 <input
                     className={clsx(
                         kcClsx("kcButtonClass", "kcButtonPrimaryClass", "kcButtonLargeClass"),

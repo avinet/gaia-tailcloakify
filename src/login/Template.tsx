@@ -176,7 +176,7 @@ export default function Template(props: TemplateProps<KcContext, I18n>) {
                     <img
                         alt={"Logo"}
                         src={backgroundLogoUrl || kcContext.properties["TAILCLOAKIFY_BACKGROUND_LOGO_URL"]}
-                        className={"fixed z-10 top-4 left-8"}
+                        className={"fixed z-10 bottom-4 left-6"}
                     />
                 )}
                 {(backgroundVideoUrl || kcContext.properties["TAILCLOAKIFY_BACKGROUND_VIDEO_URL"]) && (
@@ -196,7 +196,7 @@ export default function Template(props: TemplateProps<KcContext, I18n>) {
                 {headerLogoUrl || kcContext.properties["TAILCLOAKIFY_HEADER_LOGO_URL"] ? (
                     <img alt={"Logo"} src={headerLogoUrl || kcContext.properties["TAILCLOAKIFY_HEADER_LOGO_URL"]} className={"mx-auto h-16 w-auto p-2"} />
                 ) : (
-                    <div className={"font-bold text-center text-2xl p-4"}>{msg("loginTitleHtml", realm.displayNameHtml)}</div>
+                    <div className={"font-bold text-center text-2xl p-2"}>{msg("loginTitleHtml", realm.displayNameHtml)}</div>
                 )}
                 <header className={clsx(kcClsx("kcFormHeaderClass"))}>
                     {(() => {
@@ -330,12 +330,15 @@ export default function Template(props: TemplateProps<KcContext, I18n>) {
                                     <button
                                         tabIndex={1}
                                         id="kc-current-locale-link"
+                                        className={clsx("flex items-center space-x-1")}
                                         aria-label={msgStr("languages")}
                                         aria-haspopup="true"
                                         aria-expanded="false"
                                         aria-controls="language-switch1"
                                     >
-                                        {currentLanguage.label}
+                                        {currentLanguage.label} <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+    <path clipRule="evenodd" d="M5.23017 7.20938C5.52875 6.92228 6.00353 6.93159 6.29063 7.23017L10 11.1679L13.7094 7.23017C13.9965 6.93159 14.4713 6.92228 14.7698 7.20938C15.0684 7.49647 15.0777 7.97125 14.7906 8.26983L10.5406 12.7698C10.3992 12.9169 10.204 13 10 13C9.79599 13 9.60078 12.9169 9.45938 12.7698L5.20938 8.26983C4.92228 7.97125 4.93159 7.49647 5.23017 7.20938Z" fillRule="evenodd"></path>
+  </svg>
                                     </button>
                                     <ul
                                         role="menu"

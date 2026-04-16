@@ -25,6 +25,7 @@ const { useI18n, ofTypeI18n } = i18nBuilder
             p2incOrgsTitle: "Invitations",
             p2incOrgsText: "You have been invited to join the following organizations. Uncheck those you wish to decline.",
             loginOtpOneTimeLabel: "Please Input your One-time code",
+            loginAccountTitle: "Sign in to your account"
         },
         de: {
             footerImprintTitle: "Impressum",
@@ -40,7 +41,8 @@ const { useI18n, ofTypeI18n } = i18nBuilder
             p2incMagicLinkOtpFormTitle: "Email OTP",
             p2incOrgsTitle: "Einladungen",
             p2incOrgsText: "Sie wurden eingeladen, den folgenden Organisationen beizutreten. Deaktivieren Sie diejenigen, die Sie ablehnen möchten.",
-            loginOtpOneTimeLabel: "Bitte geben Sie Ihren Einmalcode"
+            loginOtpOneTimeLabel: "Bitte geben Sie Ihren Einmalcode",
+            loginAccountTitle: "Bei Ihrem Konto anmelden",
         },
         fr: {
             footerImprintTitle: "Mentions Légales",
@@ -56,7 +58,8 @@ const { useI18n, ofTypeI18n } = i18nBuilder
             p2incMagicLinkOtpFormTitle: "Email OTP",
             p2incOrgsTitle: "Invitations",
             p2incOrgsText: "Vous avez été invité à rejoindre les organisations suivantes. Décochez celles que vous souhaitez refuser.",
-            loginOtpOneTimeLabel: "Veuillez saisir votre Code à usage unique"
+            loginOtpOneTimeLabel: "Veuillez saisir votre Code à usage unique",
+            loginAccountTitle: "Connectez-vous à votre compte",
         },
         it: {
             footerImprintTitle: "Impronta",
@@ -72,7 +75,8 @@ const { useI18n, ofTypeI18n } = i18nBuilder
             p2incMagicLinkOtpFormTitle: "Email OTP",
             p2incOrgsTitle: "Inviti",
             p2incOrgsText: "Sei stato invitato a unirti alle seguenti organizzazioni. Deseleziona quelle che desideri rifiutare.",
-            loginOtpOneTimeLabel: "Si prega di inserire il tuo one-time password"
+            loginOtpOneTimeLabel: "Si prega di inserire il tuo one-time password",
+            loginAccountTitle: "Accedi",
         },
         es: {
             footerImprintTitle: "Aviso Legal",
@@ -88,7 +92,8 @@ const { useI18n, ofTypeI18n } = i18nBuilder
             p2incMagicLinkOtpFormTitle: "Email OTP",
             p2incOrgsTitle: "Invitaciones",
             p2incOrgsText: "Has sido invitado a unirte a las siguientes organizaciones. Desmarca aquellas que deseas rechazar.",
-            loginOtpOneTimeLabel: "Por favor ingrese su Código de un solo uso"
+            loginOtpOneTimeLabel: "Por favor ingrese su Código de un solo uso",
+            loginAccountTitle: "Acceder a tu cuenta",
         },
         cs: {
             footerImprintTitle: "Tiráž",
@@ -104,7 +109,8 @@ const { useI18n, ofTypeI18n } = i18nBuilder
             p2incMagicLinkOtpFormTitle: "Email OTP",
             p2incOrgsTitle: "Pozvánky",
             p2incOrgsText: "Byli jste pozváni k připojení k následujícím organizacím. Zrušte výběr těch, které chcete odmítnout.",
-            loginOtpOneTimeLabel: "Zadejte prosím svůj jednorázový kód"
+            loginOtpOneTimeLabel: "Zadejte prosím svůj jednorázový kód",
+            loginAccountTitle: "Přihlásit k vašemu účtu",
         },
         nl: {
             footerImprintTitle: "Colofon",
@@ -120,7 +126,8 @@ const { useI18n, ofTypeI18n } = i18nBuilder
             p2incMagicLinkOtpFormTitle: "Email OTP",
             p2incOrgsTitle: "Uitnodigingen",
             p2incOrgsText: "U bent uitgenodigd om lid te worden van de volgende organisaties. Vink degenen die u wilt weigeren uit.",
-            loginOtpOneTimeLabel: "Voer uw eenmalige code in"
+            loginOtpOneTimeLabel: "Voer uw eenmalige code in",
+            loginAccountTitle: "Inloggen met uw account",
         },
         pl: {
             footerImprintTitle: "Nota Prawna",
@@ -136,7 +143,8 @@ const { useI18n, ofTypeI18n } = i18nBuilder
             p2incMagicLinkOtpFormTitle: "Email OTP",
             p2incOrgsTitle: "Zaproszenia",
             p2incOrgsText: "Otrzymałeś zaproszenie do dołączenia do następujących organizacji. Odznacz te, które chcesz odrzucić.",
-            loginOtpOneTimeLabel: "Proszę wpisać kod jednorazowy"
+            loginOtpOneTimeLabel: "Proszę wpisać kod jednorazowy",
+            loginAccountTitle: "Zaloguj się na swoje konto",
         },
         ru: {
             footerImprintTitle: "Выходные Данные",
@@ -152,7 +160,8 @@ const { useI18n, ofTypeI18n } = i18nBuilder
             p2incMagicLinkOtpFormTitle: "Email OTP",
             p2incOrgsTitle: "Приглашения",
             p2incOrgsText: "Вы были приглашены присоединиться к следующим организациям. Снимите отметку с тех, от которых вы хотите отказаться.",
-            loginOtpOneTimeLabel: "Пожалуйста, введите свой одноразовый код"
+            loginOtpOneTimeLabel: "Пожалуйста, введите свой одноразовый код",
+            loginAccountTitle: "Войдите в свою учетную запись"
         },
         sv: {
             footerImprintTitle: "Impressum",
@@ -168,7 +177,25 @@ const { useI18n, ofTypeI18n } = i18nBuilder
             p2incMagicLinkOtpFormTitle: "E-post OTP",
             p2incOrgsTitle: "Inbjudningar",
             p2incOrgsText: "Du har blivit inbjuden att gå med i följande organisationer. Avmarkera de du vill avböja.",
-            loginOtpOneTimeLabel: "Vänligen ange din engångskod"
+            loginOtpOneTimeLabel: "Vänligen ange din engångskod",
+            loginAccountTitle: "Logga in på ditt konto"
+        },
+        no: {
+            footerImprintTitle: "Impressum",
+            footerDataProtectionTitle: "Databeskyttelse",
+            footerCookiePreferencesTitle: "Cookie-innstillinger",
+            doResend: "Send på nytt",
+            magicLinkConfirmation: "Sjekk e-posten din og klikk på lenken for å logge inn!",
+            magicLinkContinuationConfirmation: "Sjekk e-posten din og klikk på lenken for å logge inn! Vennligst ikke lukk denne fanen.",
+            magicLinkSuccessfulLogin: "Autentiseringsøkt bekreftet. Vennligst gå tilbake til fanen for innloggingssiden.",
+            magicLinkFailLogin: "Autentiseringsøkt utløpt. Vennligst lukk denne fanen og start innloggingsprosessen på nytt.",
+            loginPage: "Innloggingsside",
+            multipleSessionsError: "Flere innloggingsøkter åpnet i samme nettleser. Vennligst lukk dem og start innloggingen på nytt.",
+            p2incMagicLinkOtpFormTitle: "E-post OTP",
+            p2incOrgsTitle: "Invitasjoner",
+            p2incOrgsText: "Du har blitt invitert til å bli med i følgende organisasjoner. Fjern merket for de du ønsker å avslå.",
+            loginOtpOneTimeLabel: "Vennligst skriv inn din engangskode",
+            loginAccountTitle: "Logg inn på kontoen din",
         }
     })
     .build();
